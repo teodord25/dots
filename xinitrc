@@ -51,10 +51,14 @@ fi
 
 picom --config ~/.config/picom/picom.conf &
 
-# requires gifsicle (yay -S gifsicle)
-# xwinwrap -ni -b -fs -ov -nf -- gifview -w WID ~/Pictures/trn.gif -a &
+# gif
+# xwinwrap -g 1920x1080 -ni -b -fs -ov -nf -- gifview -w WID ~/Downloads/rei.gif -a &
 
-feh --bg-scale ~/Images/best_girl_nowater.jpg
+# https://moewalls.com/anime/rei-ayanami-in-the-rain-neon-genesis-evangelion-live-wallpaper/
+# video
+xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid WID --loop --no-audio ~/Downloads/rei.mp4 
+
+# feh --bg-scale ~/Images/best_girl_nowater.jpg
 
 setxkbmap -option caps:escape
 
